@@ -1,0 +1,36 @@
+.personal-container{
+    background-color:white;
+    width: 100%; 
+    height: 63vh;   
+    overflow-y: scroll; 
+}
+
+.personal-body{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px auto;
+}
+.personal-header{
+    text-align: center;
+    font-family: 'Dancing Script', 'cursive' !important;
+}
+.personal-content{
+    padding: 20px 10px;
+    line-height: 5;
+}
+
+@media only screen and (max-width: 489px){
+    .personal-container{ 
+        height: 67vh;   
+    }
+    .personal-body{
+        width: 90%;
+    }
+    .personal-content{
+        padding: 5px 5px;
+        line-height:3;
+        font-size: 10px;
+    }
+}

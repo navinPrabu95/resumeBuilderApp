@@ -1,0 +1,37 @@
+
+.footer_body{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_body button{
+    border: none;
+    margin-left: 10px;
+    padding: 30px;
+    border-radius: 50px;
+    margin-top: 10px;
+    font-size: 30px;
+    width: 100px;
+    background-color: orange;
+}
+
+@media only screen and (max-width: 489px) {
+    .footer_container{
+        height: 100%;
+    }
+    .footer_body{
+        padding: 10px;
+        margin-top:0px;
+    }
+    .footer_body button{
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 30px;
+        margin-top:10px;
+        font-size: 15px;
+        width: 90px;
+        height:47px;
+    }
+}
