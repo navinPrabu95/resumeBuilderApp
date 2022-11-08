@@ -1,17 +1,25 @@
 import React, { useState } from 'react'
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import './SkillSet.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SkillSet = ({number,setNumber}) => {
 
-  const [otherSkills,setOtherSkills] = useState({skill1:'',skill2:'',skill3:'',skill4:'',skill5:'',skill6:''})
-  const [Interest,setInterest] = useState({Interest1:'',Interest2:'',Interest3:'',Interest4:'',Interest5:'',Interest6:''})
-  const [workshops,setWorkshops] = useState({Workshop1:'',Workshop2:''})
-  const [personalSkill,setPersonalSkill] = useState({PersonalSkill1:'',PersonalSkill2:'',PersonalSkill3:'',PersonalSkill4:'',PersonalSkill5:'',PersonalSkill6:''})
+  const [otherSkills,setOtherSkills] = useState({})
+  const [Interest,setInterest] = useState({})
+  const [workshops,setWorkshops] = useState({})
+  const [personalSkill,setPersonalSkill] = useState({})
   const [objective,setObjective] = useState('')
 
 
   const onSubmitInput=()=>{
+
+    if(!otherSkills || !Interest || !workshops || !personalSkill || !objective){
+      toast.error("Please fill All the fields",{
+        position: toast.POSITION.TOP_RIGHT
+    })
+    }
     const skillData = {
       otherSkills:otherSkills,
       Interest:Interest,
@@ -24,6 +32,7 @@ const SkillSet = ({number,setNumber}) => {
   }
   return (
     <div className='skills-container'>
+      <ToastContainer />
       <div className='Skills-body'>
         <div className='Skills-header'><h3>Personal Skills</h3></div>
         <div className='Skills-content'>       
