@@ -38,6 +38,7 @@
     flex-basis:15%;
 }
 
+
 @media only screen and (max-width: 489px) {
     .App header{
         flex-basis: 10%;

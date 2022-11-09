@@ -36,26 +36,26 @@ const Education = ({number,setNumber}) => {
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>College/University</Form.Label>
-                <Form.Control type="text" placeholder="Enter College/University" name='Institution' onChange={(e)=>{setCollegeDetails({...collegeDetails,[e.target.name]:e.target.value})}} required/>
+                <Form.Control type="text" placeholder="Enter College/University" name='Institution' onChange={(e)=>{setCollegeDetails({...collegeDetails,[e.target.name]:e.target.value})}} required={true}/>
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>Year</Form.Label>
-                <Form.Control type="number" placeholder="year" name='year' onChange={(e)=>{setCollegeDetails({...collegeDetails,[e.target.name]:e.target.value})}} required/>
+                <Form.Control type="number" placeholder="year" name='year' onChange={(e)=>{setCollegeDetails({...collegeDetails,[e.target.name]:e.target.value})}} required={true}/>
               </Form.Group>
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>CGPA</Form.Label>
-                <Form.Control type="text" placeholder="Enter CGPA" name='percentage' onChange={(e)=>{setCollegeDetails({...collegeDetails,[e.target.name]:e.target.value})}} required/>
+                <Form.Control type="text" placeholder="Enter CGPA" name='percentage' onChange={(e)=>{setCollegeDetails({...collegeDetails,[e.target.name]:e.target.value})}} required={true}/>
               </Form.Group>
             </Row>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Qualification</Form.Label>
-                <Form.Control type="text" placeholder="Enter Qualification" name='qualification' onChange={(e)=>{setCollegeDetails({...collegeDetails,[e.target.name]:e.target.value})}} required/>
+                <Form.Control type="text" placeholder="Enter Qualification" name='qualification' onChange={(e)=>{setCollegeDetails({...collegeDetails,[e.target.name]:e.target.value})}} required={true}/>
               </Form.Group>
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>Description</Form.Label>
-                <Form.Control type="text" placeholder="Enter Description" name='description' onChange={(e)=>{setCollegeDetails({...collegeDetails,[e.target.name]:e.target.value})}} required/>
+                <Form.Control type="text" placeholder="Enter Description" name='description' onChange={(e)=>{setCollegeDetails({...collegeDetails,[e.target.name]:e.target.value})}} required={true}/>
               </Form.Group>
             </Row>
 
@@ -67,26 +67,26 @@ const Education = ({number,setNumber}) => {
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>School</Form.Label>
-                <Form.Control type="text" placeholder="Enter school name" name='Institution' onChange={(e)=>{setHscDetails({...hscDetails,[e.target.name]:e.target.value})}} required/>
+                <Form.Control type="text" placeholder="Enter school name" name='Institution' onChange={(e)=>{setHscDetails({...hscDetails,[e.target.name]:e.target.value})}} required={true}/>
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>Year</Form.Label>
-                <Form.Control type="number" placeholder="year" name='year' onChange={(e)=>{setHscDetails({...hscDetails,[e.target.name]:e.target.value})}} required/>
+                <Form.Control type="number" placeholder="year" name='year' onChange={(e)=>{setHscDetails({...hscDetails,[e.target.name]:e.target.value})}} required={true}/>
               </Form.Group>
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>Percentage</Form.Label>
-                <Form.Control type="text" placeholder="Enter Percentage" name='percentage' onChange={(e)=>{setHscDetails({...hscDetails,[e.target.name]:e.target.value})}} required/>
+                <Form.Control type="text" placeholder="Enter Percentage" name='percentage' onChange={(e)=>{setHscDetails({...hscDetails,[e.target.name]:e.target.value})}} required={true}/>
               </Form.Group>
             </Row>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Qualification</Form.Label>
-                <Form.Control type="text" placeholder="Enter Qualification" name='qualification' onChange={(e)=>{setHscDetails({...hscDetails,[e.target.name]:e.target.value})}} required/>
+                <Form.Control type="text" placeholder="Enter Qualification" name='qualification' onChange={(e)=>{setHscDetails({...hscDetails,[e.target.name]:e.target.value})}} required={true}/>
               </Form.Group>
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>Description</Form.Label>
-                <Form.Control type="text" placeholder="Enter Description" name='description' onChange={(e)=>{setHscDetails({...hscDetails,[e.target.name]:e.target.value})}} required/>
+                <Form.Control type="text" placeholder="Enter Description" name='description' onChange={(e)=>{setHscDetails({...hscDetails,[e.target.name]:e.target.value})}} required={true}/>
               </Form.Group>
             </Row>
 

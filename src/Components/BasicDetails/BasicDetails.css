@@ -1,5 +1,5 @@
 .basic_container{
-    background-color: white;
+    background-color:lightblue;
     margin-top: 0;
     height: 63vh;
 }
@@ -36,6 +36,11 @@
     border-radius: 50px;
     height: 40px;
     margin-top:30px;
+}
+.toastify-error{
+    background-color: red;
+    color: red;
+    width: 250px;
 }
 
 @media only screen and (max-width: 489px) {

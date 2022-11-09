@@ -13,18 +13,19 @@ const BasicDetails = ({number,setNumber}) => {
   }
 
   const onSubmitInput=()=>{
-    if(!basicData.email || !basicData.name || !basicData.address1 || !basicData.number){
-      toast.error("Please fill All the fields",{
+
+    if(!basicData.email ||!basicData.name || !basicData.address1){
+      toast.error("Please enter manditory fields",{
         position: toast.POSITION.TOP_RIGHT
     })
     }else{
       console.log('basicData',basicData);
       localStorage.setItem('basic',JSON.stringify(basicData))
       toast.success("Details added sucessfully",{
-        position: toast.POSITION.TOP_RIGHT
+        position: toast.POSITION.TOP_RIGHT,
     })
       setNumber(number+1)
-    } 
+    }   
   }
   return (
     <div className='basic_container'>
