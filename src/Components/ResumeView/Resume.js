@@ -3,6 +3,8 @@ import { Table } from 'react-bootstrap'
 import './Resume.css'
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
+import { FaDownload } from 'react-icons/fa';
+
 
 const Resume = () => {
 
@@ -56,7 +58,7 @@ const Resume = () => {
             <div className='resume-header'>
                <div></div>
                <h3>Final Resume</h3>
-               <button onClick={handleDownloadPdf}>Download</button>
+               <button onClick={handleDownloadPdf}>Download<FaDownload/></button>
             </div>
             <div className='resume-main' ref={printRef}>
                {basicData ? <div className='resume-content'>
