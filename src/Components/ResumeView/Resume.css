@@ -4,6 +4,13 @@
     overflow-y: scroll; 
     background-color:lightblue;
 }
+.resume-content-header h3{
+    font-weight: 600;
+}
+.resume-header button{
+    border: none;
+    background-color: aqua;
+  }
 
 .resume-body{
     display: flex;
@@ -40,9 +47,10 @@
     font-size: 22px;
     font-weight: 400;
 }
+
 .resume-objective-content h4{
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .resume-content-main{
     display: flex;
@@ -60,10 +68,6 @@
     }
     .resume-header h3{
         font-size:15px;
-    }
-    .resume-header button{
-      border: none;
-      background-color: aqua;
     }
     .resume-body{
         font-size:5px;

@@ -35,7 +35,7 @@ const Resume = () => {
       var heightLeft = imgHeight;
       const data = canvas.toDataURL('image/png');
 
-      const pdf = new jsPDF('p', 'mm', "a4");
+      const pdf = new jsPDF('p', 'mm', "a4"); 
       let position = 0;
       const imgProperties = pdf.getImageProperties(data);
       pdf.addImage(data, 'PNG', 0, position, imgWidth, imgHeight + 15);
